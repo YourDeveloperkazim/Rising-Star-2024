@@ -710,6 +710,7 @@ img.background-calculator {
     transition: all 0.2s ease-in-out;
     -webkit-user-select: none;
     -moz-user-select: none;
+    user-select: none;
     -ms-user-select: none;
     color: black;
     font-size: 18px;
@@ -1121,7 +1122,7 @@ input[type=checkbox] + label:active:before {
 }
 
 input[type=checkbox]:checked + label:before {
-    c
+    
     vertical-align: top;
     border: 0;
 }
@@ -1495,10 +1496,7 @@ ul.crumbs {
     width: 70%;
     padding-bottom: 20px;
 }
-.about-photo-section img,
-.about-section-photo img{
-    /* width: 100%; */
-}
+
 .about-section-photo{
     position: relative;
 }
@@ -1575,7 +1573,7 @@ img.Photo-about-1 {
 ul.list{
     padding-top: 40px;
 }
-ul.list. li h6 {
+ul.list li h6 {
     padding-top: 22px;
     padding-left: 25px;
     position: relative;
@@ -1773,7 +1771,7 @@ form.about-form .button {
     z-index: -1;
     text-transform: uppercase;
     font-size: 86px;
-    color: ##39c2c0;
+    color: #39c2c0;
     position: absolute;
     top: 62%;
     left: 2%;
@@ -3495,6 +3493,7 @@ form.about-form.callto {
   border-radius: 8px;
   height: 2px;
   outline: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -3516,6 +3515,7 @@ form.about-form.callto {
 .range-sliders .input-slider {
   border: 1px solid #e6e6e6;
   padding: 0.5rem;
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -4048,6 +4048,7 @@ ul.Contacts.mobil li {
     position: relative;
     background-color: #39c2c0;
     display: flex;
+    gap: 20px;
     justify-content: space-between; 
 }
     .s-crossfit-banner:after, .s-crossfit-banner:before {
@@ -4091,11 +4092,12 @@ ul.Contacts.mobil li {
       z-index: 0;
       /* background-color: rgba(0, 0, 0, 0.5); } */
     }
+
   .crossfit-banner-right {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -4125,24 +4127,24 @@ ul.Contacts.mobil li {
       margin-bottom: 30px;
       position: relative;
       z-index: 1;
-      background-color: rgb(180, 180, 180);
+      /* background-color: rgb(180, 180, 180);
       padding: 20px 80px; 
-      border-radius: 25px;
+      border-radius: 25px; */
     }
 
     .crossfit-banner-right h2 {
-      font-size: 3em;
+      font-size: 57px;
+      font-weight: 700;
       text-transform: uppercase;
-      line-height: 0.7em;
-      margin-bottom: 29px;
+      line-height: 0.8em;
       position: relative;
-      z-index: 1; }
+      z-index: 1; 
+    }
 
     .crossfit-banner-right .text-bottom {
       font-size: 64px;
       font-weight: 500;
       text-transform: uppercase;
-      font-style: italic;
       line-height: 1em;
       position: relative;
       z-index: 1; }
@@ -4151,7 +4153,6 @@ ul.Contacts.mobil li {
         font-size: 35px;
         font-weight: 500;
         text-transform: uppercase;
-        font-style: italic;
         line-height: 1em;
         position: relative;
         z-index: 1; }
@@ -4244,7 +4245,7 @@ ul.Contacts.mobil li {
                         font-size: 40px;
                     }
                     h2 {
-                        font-size: 7em;
+                        font-size: 6em;
                     }
                 }
                 .crossfit-banner-left {
@@ -5101,4 +5102,61 @@ ul.Contacts.mobil li {
 .crossfit-banner-right .text-bottom a {
     color: #0056b3;
     text-decoration: underline;
+}
+
+.card {
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    padding: 20px;
+}
+
+.card-img-top {
+    object-fit: cover;
+
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body .text-top{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text-bottom p{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.start {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.text-top strong{
+    font-size: 30px;
+}
+
+.start p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
