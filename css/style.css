@@ -4048,7 +4048,8 @@ ul.Contacts.mobil li {
     position: relative;
     background-color: #39c2c0;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between; 
+}
     .s-crossfit-banner:after, .s-crossfit-banner:before {
       content: '';
       position: absolute;
@@ -4057,13 +4058,19 @@ ul.Contacts.mobil li {
       height: 24px;
       background-color: #202020;
       z-index: 1;
-      pointer-events: none; }
+      pointer-events: none; 
+    }
+
     .s-crossfit-banner:before {
       bottom: -1px;
-      clip-path: polygon(100% 100%, 0 0, 0 100%); }
+      clip-path: polygon(100% 100%, 0 0, 0 100%); 
+    }
+
     .s-crossfit-banner:after {
       top: -1px;
-      clip-path: polygon(100% 0, 0 0, 0 100%); }
+      clip-path: polygon(100% 0, 0 0, 0 100%); 
+    }
+    
   
   .crossfit-banner-left {
     width: 44.5%;
@@ -4073,6 +4080,7 @@ ul.Contacts.mobil li {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
     position: relative; }
+    
     .crossfit-banner-left:after {
       content: '';
       position: absolute;
@@ -4081,18 +4089,20 @@ ul.Contacts.mobil li {
       width: 100%;
       height: 100%;
       z-index: 0;
-      background-color: rgba(0, 0, 0, 0.5); }
-  
+      /* background-color: rgba(0, 0, 0, 0.5); } */
+    }
   .crossfit-banner-right {
-    width: 55.5%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 20px 15px 10px 124px;
+    padding: 10px 15px 10px 124px;
     position: relative; }
+
+
     .crossfit-banner-right:before {
       content: '';
       position: absolute;
@@ -4104,22 +4114,30 @@ ul.Contacts.mobil li {
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url(../img/bg-crossfit.svg); }
+
+
     .crossfit-banner-right .text-top {
       font-family: "Righteous", sans-serif;
       color: #000;
       font-weight: 400;
-      font-size: 48px;
+      font-size: 35px;
       line-height: 1.2;
-      margin-bottom: 19px;
+      margin-bottom: 30px;
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      background-color: rgb(180, 180, 180);
+      padding: 20px 80px; 
+      border-radius: 25px;
+    }
+
     .crossfit-banner-right h2 {
-      font-size: 9em;
+      font-size: 3em;
       text-transform: uppercase;
       line-height: 0.7em;
       margin-bottom: 29px;
       position: relative;
       z-index: 1; }
+
     .crossfit-banner-right .text-bottom {
       font-size: 64px;
       font-weight: 500;
@@ -4128,6 +4146,16 @@ ul.Contacts.mobil li {
       line-height: 1em;
       position: relative;
       z-index: 1; }
+
+      .crossfit-banner-right .text-bottom p{
+        font-size: 35px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 1em;
+        position: relative;
+        z-index: 1; }
+
       .crossfit-banner-right .text-bottom a {
         font-weight: 700;
         color: #fcbd56;
@@ -4156,8 +4184,8 @@ ul.Contacts.mobil li {
             
             .crossfit-banner-left {
                 flex: 1;
-                background-image: url('assets/img/crossmax-2.jpg');
-                background-size: cover;
+                /* background-image: url('assets/img/crossmax-2.jpg'); */
+                background-size: contain;
                 background-position: center;
                 min-height: 200px;
             }
@@ -5029,3 +5057,48 @@ ul.Contacts.mobil li {
 }
 
 .gallery-area { padding-top: 90px; padding-bottom: 100px; background-color: #f7f7f7; } .section-title { margin-bottom: 40px; } .section-title h2 { font-size: 32px; text-transform: uppercase; margin: 0; } .grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; } .grid-item { flex: 1 1 calc(25% - 15px); max-width: calc(25% - 15px); } .portfolio-img { position: relative; overflow: hidden; } .portfolio-img img { width: 100%; height: auto; display: block; transition: transform 0.3s ease; } .portfolio-img:hover img { transform: scale(1.1); } @media (max-width: 768px) { .grid-item { flex: 1 1 calc(50% - 15px); max-width: calc(50% - 15px); } } @media (max-width: 480px) { .grid-item { flex: 1 1 100%; max-width: 100%; } }
+
+
+
+
+/*Add Css*/
+
+.crossfit-banner-right .player-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.crossfit-banner-right .stat {
+    text-align: center;
+    flex: 1;
+}
+
+.crossfit-banner-right .stat p {
+    margin: 5px 0;
+}
+
+.crossfit-banner-right .stat strong {
+    display: block;
+    font-size: 30px;
+    color: #555;
+}
+
+.crossfit-banner-right .stat p:last-child {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.crossfit-banner-right .text-bottom {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.crossfit-banner-right .text-bottom a {
+    color: #0056b3;
+    text-decoration: underline;
+}
